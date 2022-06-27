@@ -4,7 +4,7 @@ import re
 from decouple import config
 
 def checkItemId(id, server='thRO'):
-  apiKey = config('aeba153ed40c8705466f30b8783849bd')
+  apiKey = config('apiKey')
   try:
       url = f'https://www.divine-pride.net/api/database/Item/{id}?apiKey={apiKey}'
       r = requests.get(url)
