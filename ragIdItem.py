@@ -3,7 +3,7 @@ import json
 import re
 from decouple import config
 
-def checkItemId(id, server='bRO'):
+def checkItemId(id, server='thRO'):
   apiKey = config('apiKey')
   try:
       url = f'https://www.divine-pride.net/api/database/Item/{id}?apiKey={apiKey}'
