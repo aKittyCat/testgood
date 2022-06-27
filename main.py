@@ -15,5 +15,5 @@ for filename in os.listdir('./commands'):
   if filename.endswith('.py'):
     client.load_extension(f'commands.{filename[:-3]}')  
   
-TOKEN=config('OTkwNzQzODUwODE1NDYzNDg0.G-A-Ga.jsC5JsV-PB5yjZ9OUCjUDXfj0qz2v6Rdu9Ja0s')
-client.run(OTkwNzQzODUwODE1NDYzNDg0.G-A-Ga.jsC5JsV-PB5yjZ9OUCjUDXfj0qz2v6Rdu9Ja0s)
+TOKEN=config('TOKEN')
+client.run(TOKEN)
